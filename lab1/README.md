@@ -81,7 +81,7 @@
 - **git pull** - descarcă ultimele modificări din repository-ul remote
 - **git status** - afișează modificările locale, precum și cele care vor fi incluse în următorul commit
 - **git log** - afișează ultimele commituri
-- **git config** - setează variabilele de configurare, o folosim, în general, pentru a seta emailul și numele utilizatorului curent pentru a putea asocia commiturile unui autor
+- **git config** - setează variabilele de configurare; o folosim, în general, pentru a seta emailul și numele utilizatorului curent pentru a putea asocia commiturile unui autor
 
 🤔 **Extra resurse**:
 
