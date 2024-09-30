@@ -116,7 +116,7 @@
 - în terminal vom executa comanda de clonare a repository-ului remote creat anterior (adresa se poate obține de pe pagina repository-ului și urmează structura https://github.com/username/repo-name.git)
 
 ```sh
-git clone https://github.com/ioanaandreeab/webtech_labs_2023.git
+git clone https://github.com/ioanaandreeab/webtech_labs_2024.git
 ```
 
 ### 1.5 Versionarea codului
