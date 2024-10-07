@@ -3,9 +3,14 @@
 ## Contact
 - ioana.berdei@csie.ase.ro
 
+## Ultimul seminar:
+
+- [Seminar 1 - Git & JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab1)
+
 ## Toate seminarele:
 
 - [Seminar 1 - Git & JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab1)
+- [Seminar 2 - Web 101 && Basic JS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab2)
 
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
