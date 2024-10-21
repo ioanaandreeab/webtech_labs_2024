@@ -7,6 +7,13 @@
 
 - [Seminar 3 - Array practice](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab3)
 
+## Tema curentă:
+- [Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)
+
+## Formular trimitere tema curentă:
+- [Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)
+    - *deadline*: **29 octombrie 2024**
+
 ## Toate seminarele:
 
 - [Seminar 1 - Git & JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab1)
