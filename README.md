@@ -5,13 +5,14 @@
 
 ## Ultimul seminar:
 
-- [Seminar 2 - Web 101 && Basic JS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab2)
+- [Seminar 3 - Array practice](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab3)
 
 ## Toate seminarele:
 
 - [Seminar 1 - Git & JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab1)
 - [Seminar 2 - Web 101 && Basic JS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab2)
 - [Seminar 3 - Array practice](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab3)
+- [Seminar 4 - Closures, OOP și erori](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab4)
 
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
