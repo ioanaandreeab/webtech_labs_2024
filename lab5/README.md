@@ -96,7 +96,6 @@
 
 - Programarea asincronă este o paradigmă în cadrul căreia codul este posibilă execuția codului **independent** de firul principal de execuție, fiind astfel _non-blocking_
 - Programarea asincronă permite astfel **execuția mai multor task-uri în același timp**, ele nedepinzând de finalizarea acțiunii precedente
-![async programming](https://www.freecodecamp.org/news/content/images/2023/01/image-336.png)
 
 - În JavaScript, majoritatea operațiunilor asincrone au la bază **evenimente de intrare/ieșire**, atât pe back-end, cât și pe front-end:
 
