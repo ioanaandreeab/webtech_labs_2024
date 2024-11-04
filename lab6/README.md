@@ -72,7 +72,7 @@
 
 - Pentru a implementa partea de back-end vom utiliza _Node.js_
 
-- Node.js este un **mediu de execuție JavaScript** și o platformă open-source bazată motorul JavaScript _V8_ al browser-ului Google
+- Node.js este un **mediu de execuție JavaScript** și o platformă open-source bazată motorul JavaScript _V8_ al browser-ului Chrome
 
 - Permite executarea codului JavaScript _în afara unui browser web_ (utilizarea clasică a JavaScript)
 
