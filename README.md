@@ -5,14 +5,18 @@
 
 ## Ultimul seminar:
 
-- [Seminar 4 - Closures, OOP și erori](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab4)
+- [Seminar 5 - Programare asincronă în JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab5)
 
 ## Tema curentă:
-- [Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)
+- ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
 
 ## Formular trimitere tema curentă:
-- [Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)
-    - *deadline*: **29 octombrie 2024**
+- ~~[Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)~~
+    - ~~*deadline*: **29 octombrie 2024**~~
+
+## Proiect:
+- [Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)
+    - *deadline*: **19 noiembrie 2024**
 
 ## Toate seminarele:
 
@@ -21,6 +25,7 @@
 - [Seminar 3 - Array practice](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab3)
 - [Seminar 4 - Closures, OOP și erori](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab4)
 - [Seminar 5 - Programare asincronă în JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab5)
+- [Seminar 6 - Server HTTP folosind Express.js](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab6)
 
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
