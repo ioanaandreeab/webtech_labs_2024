@@ -86,7 +86,7 @@
 ```js
     const http = require("http");
 
-    // pentru moment, vom simula conectarea la o bază de date reală prin utilizarea unor date definite locale
+    // pentru moment, vom simula conectarea la o bază de date reală prin utilizarea unor date definite local
     const movies = ["My Neighbor Totoro", "Soul", "Hamilton", "Spider-Man: Across the Spider-Verse"];
 
     http
@@ -101,7 +101,7 @@
 - Dacă vrem să extindem capabilitățile acestui server web putem defini mai multe așa-numite _rute_, care sunt utilizate pentru direcționarea cererilor către anumite funcții de procesare
     - În cazul nostru, ruta pentru cerere este "/" (ruta principală și, momentan, singura)
 
-- Deși simplu de citit și înțeles pentru moment, codul scris definește, în același fișier, atât _nivelul de peristență a datelor_, cât și pe cel _gestionării request-urilor_
+- Deși simplu de citit și înțeles pentru moment, codul scris definește, în același fișier, atât _nivelul de persistență a datelor_, cât și pe cel _gestionării request-urilor_
 
 - În cadrul unei aplicații complexe, acest lucru ar face codul foarte greu de scris și înțeles, motiv pentru care, fiecare funcționalitate poate fi definită într-un modul, ce poate fi importat ulterior în alte fișiere
 ## 3. Module
@@ -159,7 +159,7 @@
 
 - Este unul dintre cele mai mari și populare ecosisteme de pachete open-source și este utilizat pentru a gestiona dependențele, distribui pachete și a automatiza sarcini legate de dezvoltarea JavaScript și Node.js
 
-- Registrul npm conține peste **800.000 de pachete** care sunt folosite de peste **17 milioane de dezvoltatori**
+- Registrul npm conține peste **3.1 milioane de pachete** care sunt folosite de peste **17 milioane de dezvoltatori**
 
 - Datorită rolului important pe care îl are în cadrul ecosistemului, npm este instalat implicit împreună cu Node.js
 
@@ -173,8 +173,8 @@
 
 - Conține informații precum:
     - numele și descrierea proiectului
-    - dependențele și dependențele dezvoltator ale proiectului
-        - dependențele dezvoltator sunt necesare doar în etapa de dezvoltare a proiectului
+    - dependențele și dependențele de dezvoltator ale proiectului
+        - dependențele de dezvoltator sunt necesare doar în etapa de dezvoltare a proiectului
     - versiunea proiectului
     - scripturi 
     - detalii despre autor
@@ -220,7 +220,7 @@
     - poate primi opțiunea "-g" pentru a face instalarea global pe întreg sistemul
     - poate primi opțiunea "-D" pentru a instala un pachet ce va fi folosit doar în dezvoltare
     - poate primi opțiunea "--save" pentru a salva o dependență în fișierul _package.json_ al proiectului
-        - analog, există opțiunea "--save-dev" pentru a salva o dependență de dezvoltator
+        - analog, există opțiunea "--save-dev", echivalent cu -D,  pentru a salva o dependență de dezvoltator
 - **npm uninstall**
     - folosită pentru a dezinstala un pachet
     - e urmată de numele pachetului, spre exemplu:
@@ -272,7 +272,7 @@ npm install --save random
     - Aceasta indică faptul că acest pachet nu mai poate fi importat folosind sintaxa clasică, CommonJS
     - În practică, CommonJS nu este deprecated, dar, în viitorul apropiat, din ce în ce mai multe proiecte vor migra către ESModules, datorită faptului că acesta este standardul suportat de către limbaj (împreună cu alte câteva avantaje ce țin de performanță)
 
-- Pentru a schimba tipul de module folosit din CommonJS în ESModules trebuie să:
+- Pentru a schimba tipul de modul folosit din CommonJS în ESModules trebuie să:
 
     - Adăugăm în _package.json_ proprietatea **"type": "module"**
     - Rescriem implementarea anterioară folosind sintaxa _import/export_
