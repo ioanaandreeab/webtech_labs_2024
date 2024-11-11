@@ -137,7 +137,7 @@
 		- ex: MySQL, PostgreSQL, Microsoft SQL Server
 	- **Bazele de date non-relaționale (noSQL)**: soluții de stocare a datelor care nu se bazează pe tabele și relații, ci folosesc alte modele de date, cum ar fi documente, grafuri sau chei-valoare
 		- ex: MongoDB, Cassandra, Redis
-		- Bazele de date nu fac scopul acestei materii, însă găsiți aici un tutorial pentru utilizarea [MongoDB](https://www.geeksforgeeks.org/mongodb-tutorial/) alături de ORM-ul [mongoose](https://mongoosejs.com/docs/)
+		- Bazele de date non-relaționale nu fac scopul acestei materii, însă găsiți aici un tutorial pentru utilizarea [MongoDB](https://www.geeksforgeeks.org/mongodb-tutorial/) alături de ORM-ul [mongoose](https://mongoosejs.com/docs/)
 
 ### 2.1 Bazele de date relaționale
 
