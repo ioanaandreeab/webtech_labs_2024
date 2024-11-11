@@ -9,10 +9,13 @@
 
 ## Tema curentă:
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
+- [Tema 2 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework2)
 
 ## Formular trimitere tema curentă:
 - ~~[Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)~~
     - ~~*deadline*: **29 octombrie 2024**~~
+- [Tema 2 - JavaScript](https://forms.gle/5cEYPavMPmwU7LFeA)
+    - *deadline*: **19 noiembrie 2024**
 
 ## Proiect:
 - [Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)
