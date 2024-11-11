@@ -71,11 +71,6 @@
 
 	- Utilizarea corectă și uniformă a codurilor de stare (status codes)
 
-	- Folosirea URL-urilor nested pentru a sublinia legăturile dintre resurse
-		- Spre exemplu, dacă am vrea să apelăm un URL pentru a afișa toate filmele dintr-o colecție, acesta ar putea arăta astfel:
-		```
-			http://localhost:8080/collections/1/movies
-		```
 	- Folosirea _filtrării, sortării și paginării_ pentru a eficientiza lucrul cu un volum mare de date
 
 	- Versionarea API-urilor
