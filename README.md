@@ -5,7 +5,7 @@
 
 ## Ultimul seminar:
 
-- [Seminar 5 - Programare asincronă în JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab5)
+- [Seminar 6 - Server HTTP folosind Express.js](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab6)
 
 ## Tema curentă:
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
@@ -26,6 +26,7 @@
 - [Seminar 4 - Closures, OOP și erori](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab4)
 - [Seminar 5 - Programare asincronă în JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab5)
 - [Seminar 6 - Server HTTP folosind Express.js](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab6)
+- [Seminar 7 - REST & Persistența datelor](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab7)
 
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
