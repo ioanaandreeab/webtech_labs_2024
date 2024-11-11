@@ -346,7 +346,7 @@ const getById = async(req, res) => {
 }
 
 const create = async (req, res) => {
-	//  campurile existente in interiorul parametrilui primit trebuie sa aiba acelasi nume precum campurile din tabela
+	//  campurile existente in interiorul parametrului primit trebuie sa aiba acelasi nume precum campurile din tabela
 	//  altfel, Sequelize le va ignora si va incerca sa introduca doar acele field-uri pentru care poate sa asigure identitatea
 	const movie = req.body;
 	await Movie.create(movie);
