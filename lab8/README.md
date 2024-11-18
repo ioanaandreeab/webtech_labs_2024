@@ -179,10 +179,10 @@ Collection.belongsToMany(Movie, {through: "movie_collections"});
 ### 5. Lucru individual 2
 - Încearcă să implementezi relația de tipul _Many-to-Many_ dintre entitățile **Movie** și **Collection** și apoi să modifici controllerele celor două entități pentru a returna, atunci când este nevoie, pe lângă entitatea principală, și entitatea asociată, similar cu modelul discutat în cadrul seminarului
 
+- În plus, pentru ca aplicația să aibă toate funcționalitățile menționate, va trebui să implementezi entitatea **Person**, împreună cu toate structurile aferente, și să definești o relație de tipul _One-To-Many_ între o entitate **Person** și o entitate **Collection** (o persoană poate deține mai multe colecții, o colecție poate fi deținută de către o singură persoană)
+
 - Structura entității Person:
     - id: integer, cheie primară, autoincrementat
     - firstname: string, nenul
     - lastname: string
     - email: string, nenul, isEmail
-
-- În plus, pentru ca aplicația să aibă toate funcționalitățile menționate, va trebui să implementezi entitatea **Person**, împreună cu toate structurile aferente, și să definești o relație de tipul _One-To-Many_ între o entitate **Person** și o entitate **Collection** (o persoană poate deține mai multe colecții, o colecție poate fi deținută de către o singură persoană)
