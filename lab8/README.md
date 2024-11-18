@@ -87,7 +87,7 @@
 
 - Până acum am utilizat *Sequelize*, cel mai popular ORM scris în Node.js, pentru maparea unui obiect cu o tabelă la nivelul unei bazei de date SQLite
 
-- Pe lângă tabelele propriu-zise, o parte foarte importantă în cadrul bazelor de date relaționale este **definirea relațiilor** dintre două sau mai multe tabele
+- Pe lângă tabelele propriu-zise, o parte foarte importantă în cadrul bazelor de date relaționale este **definirea relațiilor** dintre două tabele
 
 - Conform SQL, relațiile dintre tabele pot fi de tipul:
     - One-to-One
@@ -136,8 +136,6 @@ BankAccount.belongsToMany(User, { through: 'user_bank_accounts'});
 
 // o tabela de legatura 'user_bank_accounts' va fi generata automat de catre sequelize pentru a stoca legaturile dintre cele doua entitati
 // vor fi generate automat metodele getBankAccounts() (pe entitatile de tip user) si getUsers() (pe entitatile de tip bank account)
-
-// pe langa generarea automata a unei tabele de legatura, Sequelize ne permite sa generam o tabela in mod explicit si sa o utilizam in cadrul legaturii de tip many-to-many
 ```
 
 ### 3.4 Accesarea entităților asociate
