@@ -366,7 +366,7 @@ element.innerHTML = "My new heading";
 
 ### 4.2 CORS
 - După implementarea codului și reîncărcarea paginii accesate, vom observa în consola browserului o eroare similară
-![CORS](https://res.cloudinary.com/practicaldev/image/fetch/s--h23BwLtS--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jenik9atwnnnw815b8au.png)
+![CORS](https://miro.medium.com/v2/resize:fit:1400/0*bI2yxKryqJzyUkud)
 
 - Aceasta se datorează mecanismului de **Cross-Origin Resource Sharing (CORS)** ce nu permite unui browser să apeleze un API decât dacă acel API menționează explicit că adresa de la care browserul face request-ul este o adresă validă
 
