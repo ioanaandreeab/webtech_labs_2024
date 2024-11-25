@@ -1,33 +1,64 @@
-import { movies } from "../models/movies.js";
+import {Movie} from "../models/movies.js";
 
-const getMovies = (req, res) => {
-    res.send({ records: movies });
+const getMovies = async (req, res) => {
+	const movies = await Movie.findAll();
+	res.status(200).send({movies});
+}
+
+const getMovieById = async(req, res) => {
+	try {
+		const movie = await Movie.findByPk(req.params.id);
+		if (movie) {
+			res.status(200).send({movie: movie});
+		} else {
+			res.status(404).send({message: "movie not found."});
+		}
+	} catch (err) {
+		res.status(500).send({message: "server error", err: err})
+	}
+}
+
+const createMovie = async (req, res) => {
+	//  campurile existente in interiorul parametrului primit trebuie sa aiba acelasi nume precum campurile din tabela
+	//  altfel, Sequelize le va ignora si va incerca sa introduca doar acele field-uri pentru care poate sa asigure identitatea
+	const movie = req.body;
+	await Movie.create(movie);
+
+	res.status(201).send({message: "Movie was created"});
 };
 
-const getMovieById = (req, res) => {
-    const id = req.params.id;
-    const identifiedMovie = movies[id];
-
-    if(identifiedMovie) {
-        res.send({movie: identifiedMovie});
-    } else {
-        res.status(404).send({ message: "Movie not found" });
-    }
+const updateMovie = async (req, res) => {
+	try {
+		const movie = await Movie.findByPk(req.params.id);
+		if (movie) {
+			const updatedMovie = await movie.update(req.body);
+			res.status(200).send({movie: updatedMovie});
+		} else {
+			res.status(404).send({message: "movie not found."});
+		}
+	} catch (err) {
+		res.status(500).send({message: "server error", err: err})
+	}
 };
 
-const createMovie = (req, res) => {
-    const newMovie = req.body.title;
-
-    // dacă filmul nu există deja, îl adăugăm
-    if(!movies.includes(newMovie)) {
-        movies.push(newMovie);
-    }
-
-    res.status(201).send({result: "Movie was created"});
+const removeMovie = async (req, res) => {
+	try {
+		const movie = await Movie.findByPk(req.params.id);
+		if (movie) {
+			await movie.destroy();
+			res.status(200).send({message: "deleted movie"});
+		} else {
+			res.status(404).send({message:"movie not found"});
+		}
+	} catch(err) {
+		res.status(500).send({message: "server error", err:err})
+	}
 };
 
 export {
-    getMovies,
-    getMovieById,
-    createMovie
-}
+	getMovies,
+	getMovieById,
+	createMovie,
+	updateMovie,
+	removeMovie
+};
