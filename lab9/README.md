@@ -464,4 +464,4 @@ element.innerHTML = "My new heading";
 
 ## 5. Lucru individual
 
-- Plecând de la exemplul anterior, încearcă să integrezi în pagină, după secțiunile implementate la seminar, operațiile de listare a tuturor entităților persoană din baza de date și de adăugare a unei persoane noi utilizând endpoint-urile specifice
+- Plecând de la exemplul anterior, încearcă să integrezi în pagină, după secțiunile implementate la seminar, operațiile de listare a tuturor entităților _colecție_ din baza de date și de adăugare a unei _colecții_ noi utilizând endpoint-urile specifice
