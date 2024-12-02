@@ -11,4 +11,8 @@ router.post("/", moviesController.createMovie);
 router.put("/:id", moviesController.updateMovie);
 router.delete("/:id", moviesController.removeMovie);
 
+// special route to initialize db with data
+// testing purposes ONLY, an app should NOT expose such a route
+router.post("/init", moviesController.initMovies);
+
 export {router};

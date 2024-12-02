@@ -1,4 +1,5 @@
 import { Collection } from "../models/collections.js";
+import { Movie } from "../models/movies.js";
 
 const getCollections = async (req, res) => {
 	const collections = await Collection.findAll();
@@ -53,10 +54,42 @@ const removeCollection = async (req, res) => {
 	}
 };
 
+const getMoviesForCollection = async (req, res) => {
+	try {
+		const collection = await Collection.findByPk(req.params.id);
+        if (collection) {
+            const movies = await collection.getMovies();
+            res.status(200).json({movies: movies});
+        } else {
+            res.status(404).json({message: "collection not found."});
+        }
+	} catch(err) {
+		res.status(500).send({message: "server error", err: err});
+	}
+};
+
+const addMovieToCollection =  async (req, res) => {
+	try {
+		const movie = await Movie.findByPk(req.params.movieId);
+        const collection = await Collection.findByPk(req.params.collectionId);
+        if (movie && collection) {
+            collection.addMovie(movie);
+            await collection.save();
+            res.status(200).json({message: "added movie to collection", collection:collection, movie: movie});
+        } else {
+            res.status(404).json({message: "collection/movie not found."});
+        }
+	} catch(err) {
+		res.status(500).send({message: "server error", err: err})
+	}
+};
+
 export {
 	getCollections,
 	getCollectionById,
 	createCollection,
 	updateCollection,
-	removeCollection
+	removeCollection,
+	getMoviesForCollection,
+	addMovieToCollection
 };

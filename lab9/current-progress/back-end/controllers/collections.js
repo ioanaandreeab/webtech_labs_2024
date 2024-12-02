@@ -1,4 +1,5 @@
 import { Collection } from "../models/collections.js";
+import { Movie } from "../models/movies.js";
 
 const getCollections = async (req, res) => {
 	const collections = await Collection.findAll();
@@ -71,6 +72,8 @@ const addMovieToCollection =  async (req, res) => {
 	try {
 		const movie = await Movie.findByPk(req.params.movieId);
         const collection = await Collection.findByPk(req.params.collectionId);
+		console.log(movie, 'movie');
+		console.log(collection, 'collection');
         if (movie && collection) {
             collection.addMovie(movie);
             await collection.save();

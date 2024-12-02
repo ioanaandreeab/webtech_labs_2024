@@ -2,8 +2,15 @@ import express from "express";
 import cors from "cors";
 import {router as indexRouter} from "./routes/index.js";
 import { synchronizeDatabase } from "./models/config.js";
+import { Movie } from "./models/movies.js";
+import { Collection } from "./models/collections.js";
 
 const PORT = 8080;
+
+// definirea relatiilor
+// Many-to-Many
+Movie.belongsToMany(Collection, {through: "movie_collections"});
+Collection.belongsToMany(Movie, {through: "movie_collections"});
 
 const app = express();
 

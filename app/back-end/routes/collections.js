@@ -11,4 +11,8 @@ router.post("/", collectionsController.createCollection);
 router.put("/:id", collectionsController.updateCollection);
 router.delete("/:id", collectionsController.removeCollection);
 
+// relationship related routes
+router.get("/:id/movies", collectionsController.getMoviesForCollection);
+router.post("/:collectionId/movies/:movieId", collectionsController.addMovieToCollection);
+
 export {router};

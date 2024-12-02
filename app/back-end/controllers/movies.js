@@ -1,3 +1,4 @@
+import { movies } from "../helpers/movies.js";
 import {Movie} from "../models/movies.js";
 
 const getMovies = async (req, res) => {
@@ -55,10 +56,23 @@ const removeMovie = async (req, res) => {
 	}
 };
 
+const initMovies = async (req, res) => {
+	try {
+		const mockMovies = [...movies];
+		for (let i = 0; i < mockMovies.length; i++) {
+			await Movie.create(mockMovies[i]);
+		}
+		res.status(200).send({message: "movies table initialized with mock information"});
+	} catch (err) {
+		res.status(500).send({message: "server error", err:err});
+	}
+}
+
 export {
 	getMovies,
 	getMovieById,
 	createMovie,
 	updateMovie,
-	removeMovie
+	removeMovie,
+	initMovies
 };
