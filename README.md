@@ -5,21 +5,23 @@
 
 ## Ultimul seminar:
 
-- [Seminar 8 - Recapitulare back-end & relațiile dintre entități](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab8)
+- [Seminar 9 - Front-end - noțiuni de bază](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab9)
 
 ## Tema curentă:
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
-- [Tema 2 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework2)
+- ~~[Tema 2 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework2)~~
 
 ## Formular trimitere tema curentă:
 - ~~[Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)~~
     - ~~*deadline*: **29 octombrie 2024**~~
-- [Tema 2 - JavaScript](https://forms.gle/5cEYPavMPmwU7LFeA)
-    - *deadline*: **26 noiembrie 2024**
+- ~~[Tema 2 - JavaScript](https://forms.gle/5cEYPavMPmwU7LFeA)~~
+    - ~~*deadline*: **26 noiembrie 2024**~~
 
 ## Proiect:
 - ~~[Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)~~
     - ~~*deadline*: **19 noiembrie 2024**~~
+- Back-end aplicație
+    - *deadline*: **20 decembrie 2024**
 
 ## Toate seminarele:
 
@@ -32,6 +34,7 @@
 - [Seminar 7 - REST & Persistența datelor](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab7)
 - [Seminar 8 - Recapitulare back-end & relațiile dintre entități](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab8)
 - [Seminar 9 - Front-end - noțiuni de bază](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab9)
+- [Seminar 10 - Stilizarea front-end-ului folosind CSS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab10)
 
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
