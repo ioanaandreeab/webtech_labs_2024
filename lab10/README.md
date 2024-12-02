@@ -491,7 +491,7 @@ function loadMovies(title) {
     // utilizarea fetch pentru a realiza apelul catre back-end
     fetch("http://localhost:8080/movies?" + queryParams)
         .then(response => response.json())
-        .then(data => data.records)
+        .then(data => data.movies)
         .then(movies => {
             const moviesList = document.getElementById("moviesContainer");
             // modificarea continutului HTML al unui element
@@ -630,7 +630,7 @@ const getMovies = async (req, res) => {
 		}
 	} : {};
     const movies = await Movie.findAll({where: where});
-    res.status(200).send({records: movies});
+    res.status(200).send({movies: movies});
 }
 ```
 
