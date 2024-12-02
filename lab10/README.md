@@ -99,7 +99,7 @@
 
 ### 2.2 Flexbox
 
-- **Flexbox** (abreviere pentru Flexible Box) este un model de layout în CSS care facilitează _aranjarea și alinierea_ elementelor într-un un container
+- **Flexbox** (abreviere pentru Flexible Box) este un model de layout în CSS care facilitează _aranjarea și alinierea_ elementelor într-un container
 
 - Ideea principală în layout-ul definit utilizând flexbox este de a da containerului **abilitatea de a altera dimensiunile** (și, după caz, ordinea) **elementelor copil** pentru a ocupa spațiul disponibil în mod optim
 
@@ -472,9 +472,9 @@ window.onload = () => loadMovies();
 
 // atasarea unui handler ce va apela metoda addMovie in momentul in care formularul "addMovieForm" va intercepta evenimentul de submit
 // browserele definesc un comportament standard in cazul anumitor evenimente, cum este evenimentul de submit, cum ar fi executarea unui call automat si reincarcarea paginii
-// pentru ca in acest exemplu implementarea call-ului este realizata separat, $event.preventDefault() ne va permite sa oprim browserul din a executa comportamentul standard
-document.getElementById("addMovieForm").addEventListener('submit', ($event) => {
-    $event.preventDefault();
+// pentru ca in acest exemplu implementarea call-ului este realizata separat, event.preventDefault() ne va permite sa oprim browserul din a executa comportamentul standard
+document.getElementById("addMovieForm").addEventListener('submit', (event) => {
+    event.preventDefault();
     addMovie()
 });
 
