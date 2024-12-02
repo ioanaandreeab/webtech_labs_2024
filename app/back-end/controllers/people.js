@@ -1,4 +1,5 @@
 import {Person} from "../models/people.js";
+import { Collection } from "../models/collections.js";
 
 const getPeople = async (req, res) => {
     const people = await Person.findAll();
