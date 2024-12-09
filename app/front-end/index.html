@@ -1,73 +1,48 @@
 <html>
-<head>
-    <title>action!</title>
-    <!-- includerea stilului definit local in fisierul style.css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- includerea unui font diferit dintr-o sursa externa -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-</head>
-<body>
-    <!-- element nativ dialog utilizat pentru definirea unei ferestre modale ce va fi vizibila doar in momentul activarii -->
-    <!-- in mod predefinit, un element de tip dialog va avea pozitionare absolute, fiind in afara flow-ului normal de afisare -->
-    <!-- din acest motiv, cat timp este definita in acelasi parinte, modala poate fi plasata oriunde -->
-    <dialog id="addMovieModal" class="modal">
-        <!-- continutul modalei -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Add movie</h2>
-                <!-- buton ce va apela, la click, o metoda ce va ascunde modala -->
-                <span class="modal-close" onclick="closeModal()">&times;</span>
+    <head>
+        <title>Movie Collections App</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>This will be an awesome app!</h1>
+            <!-- atașarea unui event handler pentru evenimentul de click asupra butonului -->
+            <button onclick="loadMovies()">Load movies</button>
+            <h3>The movies available in the app are: </h3>
+            <!-- definirea unui ID ce poate fi utilizat pentru identificarea elementului la nivelul JavaScript -->
+            <div id="moviesContainer">
+                <p>Nothing loaded yet - click on the button to load the movies</p>
             </div>
-            <!-- formular pentru introducerea unui nou film -->
-            <form id="addMovieForm" class="create-form">
+        </div>
+        <div>
+            <p>Insert the details about the new movie</p>
+            <form id="movieForm">
                 <!-- definirea unor label-uri asociate input-urilor -->
                 <label for="title">Title:</label>
-                <!-- atasarea unor clase pentru stilizarea tuturor componentelor selectate -->
-                <!-- utilizarea atributului required pentru a nu permite trimiterea incompleta a formularului -->
-                <input class="custom-text-input" type="text" id="title" name="title" required><br>
-
+                <input type="text" id="title" name="title" required><br>
+                
                 <label for="year">Year:</label>
-                <input class="custom-text-input" type="number" id="year" name="year" required><br>
-
+                <input type="number" id="year" name="year" required><br>
+                
                 <label for="director">Director:</label>
-                <input class="custom-text-input" type="text" id="director" name="director" required><br>
-
+                <input type="text" id="director" name="director" required><br>
+                
                 <label for="genre">Genre:</label>
-                <input class="custom-text-input" type="text" id="genre" name="genre" required><br>
-
+                <input type="text" id="genre" name="genre" required><br>
+                
                 <label for="synopsis">Synopsis:</label>
-                <textarea class="custom-text-input" id="synopsis" name="synopsis" required></textarea><br>
-
+                <textarea id="synopsis" name="synopsis" required></textarea><br>
+                
                 <label for="duration">Duration (minutes):</label>
-                <input class="custom-text-input" type="number" id="duration" name="duration" required><br>
-
+                <input type="number" id="duration" name="duration" required><br>
+                
                 <label for="poster">Poster URL:</label>
-                <input class="custom-text-input" type="url" id="poster" name="poster" required><br>
-
-                <!-- la apasarea butonului de submit a formularului este apelata metoda addMovie -->
-                <button type="submit" class="custom-button">Save</button>
+                <input type="url" id="poster" name="poster" required><br>
+                
+                <!-- la apasarea butonului de submit a formularului este apelata metoda addMovie-->
+                <button type="button" onclick="addMovie()">Submit</button>
             </form>
         </div>
-    </dialog>
-    <!-- header-ul paginii ce va include numele aplicatiei -->
-    <div class="header">
-        <div class="app-title">action!</div>
-    </div>
-    <div class="container">
-        <h3>All movies</h3>
-        <!-- toolbar cu elemente functionale -->
-        <div class="toolbar">
-            <!-- input ce permite cautarea filmului dupa titlu -->
-            <input id="search" class="searchbar custom-text-input" type="text" placeholder="Search for a movie" />
-            <!-- buton ce va apela metoda care incarca filmele pe baza titlului introdus in searchbar -->
-            <button class="custom-button" onclick="searchMovie()">Search</button>
-            <!-- buton ce va deschide modala de adaugare a unui nou film -->
-            <button class="custom-button" onclick="openModal()">Add a movie</button>
-        </div>
-        <!-- containerul in care vor fi afisate filmele pe masura ce sunt incarcate, fiind la incarcarea paginii, gol -->
-        <div id="moviesContainer">
-        </div>
-</body>
-<!-- includerea scriptului definit local script.js -->
-<script src="script.js"></script>
+    </body>
+    <script src="script.js"></script>
 </html>
