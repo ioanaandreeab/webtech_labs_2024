@@ -293,7 +293,7 @@ src/
 npm install --save axios
 ```
 
-- Vom modifica conținutul fișierului _App.js_ pentru a afișa _pagina Movies.jsx_
+- Vom modifica conținutul fișierului _App.jsx_ pentru a afișa _pagina Movies.jsx_
 ```js
 import { Movies } from './pages/Movies';
 import './App.css';
@@ -301,8 +301,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div class="header">
-        <div class="app-title">action!</div>
+      <div className="header">
+        <div className="app-title">action!</div>
       </div>
       <Movies/>
     </div>
@@ -312,7 +312,7 @@ function App() {
 export default App;
 ```
 
-- În fișierul _public/index.html_ adăugăm importarea fontului Montserrat pentru a putea fi folosit în aplicație
+- În fișierul _index.html_ adăugăm importarea fontului Montserrat pentru a putea fi folosit în aplicație
 
 ```html
 ...
@@ -354,7 +354,7 @@ export default App;
             // apelam metoda expusa de backend pentru a prelua filmele si le setam in state
             axios.get(`${SERVER_URL}/movies?` + queryParams)
             .then(res => res.data)
-            .then(data => setMovies(data.records));
+            .then(data => setMovies(data.movies));
         };
 
         const addMovie = (movie) => {
