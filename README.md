@@ -5,7 +5,7 @@
 
 ## Ultimul seminar:
 
-- [Seminar 9 - Front-end - noțiuni de bază](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab9)
+- [Seminar 10 - Stilizarea front-end-ului folosind CSS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab10)
 
 ## Tema curentă:
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
@@ -35,6 +35,7 @@
 - [Seminar 8 - Recapitulare back-end & relațiile dintre entități](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab8)
 - [Seminar 9 - Front-end - noțiuni de bază](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab9)
 - [Seminar 10 - Stilizarea front-end-ului folosind CSS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab10)
+- [Seminar 11 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab11)
 
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
