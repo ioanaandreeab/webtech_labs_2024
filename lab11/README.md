@@ -255,7 +255,7 @@ npm run dev
         - conține _fișiere statice_ care nu vor fi procesate de către Vite, ci vor fi direct copiate în directorul de ieșire final la construirea proiectului
     - directorul **src**
         - conține _codul sursă al aplicației React_
-    - fișierul **src/index.html**
+    - fișierul **index.html**
         - șablon de bază pentru pagina principală a aplicației tale React
         - aici poți modifica titlul, adăuga meta-informații sau include alte resurse statice
     - fișierul **src/main.jsx**
