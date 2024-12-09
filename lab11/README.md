@@ -258,7 +258,7 @@ npm run dev
     - fișierul **src/index.html**
         - șablon de bază pentru pagina principală a aplicației tale React
         - aici poți modifica titlul, adăuga meta-informații sau include alte resurse statice
-    - fișierul **src/index.js**
+    - fișierul **src/main.jsx**
         - punctul de intrare în aplicația React
         - aici este importată și randată componenta principală `(<App />)` în elementul cu id-ul "root" din fișierul index.html
     - fișierul **src/App.jsx**
