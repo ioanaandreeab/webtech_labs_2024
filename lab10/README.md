@@ -209,7 +209,7 @@
 
     - formularul de adăugare a unui film nou
 
-- Pornind de la **[forma actuală a aplicației](../app/front-end/)**, vom încerca să adăugăm stilizarea necesară pentru elemente, layout-ul paginii și poziționarea elementelor în pagină pentru a obține un rezultat cât mai apropiat de cel din mockup
+- Pornind de la **[forma actuală a aplicației](./current-progress/front-end/)**, vom încerca să adăugăm stilizarea necesară pentru elemente, layout-ul paginii și poziționarea elementelor în pagină pentru a obține un rezultat cât mai apropiat de cel din mockup
 
 - Începem prin a modifica structura aplicației, deci fișierul _index.html_, modificând tag-urile astfel încât să reflecte elementele din mock-up
 
