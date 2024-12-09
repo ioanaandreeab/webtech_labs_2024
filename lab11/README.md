@@ -94,7 +94,7 @@
 
 - **Virtual DOM** este o **reprezentare a interfeței grafice ținută în memorie sub formă de noduri** și **sincronizată** cu DOM-ul "real" printr-un proces care poartă numele de **reconciliere** (_reconciliation_)
 
-![virtual dom](https://i2.wp.com/programmingwithmosh.com/wp-content/uploads/2018/11/lnrn_0201.png?ssl=1)
+![virtual dom](https://miro.medium.com/v2/resize:fit:1400/0*_C52yYMRTDuMtdBA)
 
 - În esență, mecanismul funcționează astfel:
 
