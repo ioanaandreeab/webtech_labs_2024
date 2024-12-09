@@ -1,49 +1,110 @@
-function loadMovies() {
-    // apelarea endpoint-ului de listare a filmelor
-    fetch("http://localhost:8080/movies")
-    .then(response => response.json())
-    .then(data => data.records)
-    .then(movies => {
-        // selectarea unui element din pagină pe baza ID-ului
-        const moviesList = document.getElementById("moviesContainer");
-        // ștergerea conținutului 
-        moviesList.innerHTML = "";
+// atasarea unui handler ce va apela metoda loadMovies cand pagina va fi incarcata
+window.onload = () => loadMovies();
 
-        // pentru fiecare film returnat, o serie nouă de elemente HTML sunt generate, populate cu date și, la final, adăugate în pagină prin intermediul elementului moviesList
-        for(let movie of movies) {
-            // crearea unui nou element HTML
-            const item = document.createElement("div");
-            // adăugarea unei clase CSS pe un element
-            item.classList.add("movie-container");
-            // atașarea unui event handler ce va fi apelat atunci când elementul va înregistra un eveniment de tipul click
-            item.addEventListener("click", () => onMovieClick(movie));
+// atasarea unui handler ce va apela metoda addMovie in momentul in care formularul "addMovieForm" va intercepta evenimentul de submit
+// browserele definesc un comportament standard in cazul anumitor evenimente, cum este evenimentul de submit, cum ar fi executarea unui call automat si reincarcarea paginii
+// pentru ca in acest exemplu implementarea call-ului este realizata separat, event.preventDefault() ne va permite sa oprim browserul din a executa comportamentul standard
+document.getElementById("addMovieForm").addEventListener('submit', (event) => {
+    event.preventDefault();
+    addMovie()
+});
 
-            const movieName = document.createElement("p");
-            // actualizarea textului afișat în interiorul componentei
-            movieName.innerText = movie.title + " (" + movie.year + ")";
+// metoda de incarcare a filmelor ce poate primi ca parametru un titlu
+// daca un titlu este primit, se construieste un obiect URLSearchParams folosit pentru atasarea unor parametri de tip query URL-ului pe care il folosim in cadrul apelului
+// daca niciun titlu nu este primit, atunci apelul va returna toate filmele
+function loadMovies(title) {
+    const queryParams = new URLSearchParams();
 
-            const moviePoster = document.createElement("img");
-            // setarea unui atribut
-            moviePoster.setAttribute("src", movie.poster);
-            moviePoster.classList.add("poster-container");
+    if(title) {
+        queryParams.append("title", title);
+    }
 
-            // atașarea elementelor nou create la elementul părinte nou creat
-            item.appendChild(movieName);
-            item.appendChild(moviePoster);
+    // utilizarea fetch pentru a realiza apelul catre back-end
+    fetch("http://localhost:8080/movies?" + queryParams)
+        .then(response => response.json())
+        .then(data => data.records)
+        .then(movies => {
+            const moviesList = document.getElementById("moviesContainer");
+            // modificarea continutului HTML al unui element
+            moviesList.innerHTML = "";
 
-            // atașarea elementului părinte nou creat la elementul existent în pagină
-            moviesList.appendChild(item);
+            // pentru fiecare film se construiesc dinamic elementele HTML care trebuie afisate 
+            movies.forEach(movie => {
+                const movieItem = document.createElement("div");
+                // aplicarea unui stil asupra unui component
+                movieItem.classList.add("movie-container");
+
+                const movieInfoContainer = document.createElement("div");
+                movieInfoContainer.classList.add("movie-info-container");
+
+                const movieHeader = document.createElement("div");
+                movieHeader.classList.add("movie-header");
+
+                const movieTitle = document.createElement("h4");
+                // modificarea continutului text al unui element
+                movieTitle.innerText = `${movie.title} (${movie.year})`;
+
+                const movieDeleteBtn = document.createElement("button");
+                movieDeleteBtn.classList.add("remove-btn");
+                movieDeleteBtn.innerText = "X";
+                // adaugarea unui event handler pentru evenimentele de tip 'click'
+                movieDeleteBtn.addEventListener("click", () => removeMovie(movie));
+
+                const movieSpecs = document.createElement("div");
+                movieSpecs.classList.add("movie-specs");
+                movieSpecs.innerText = `${movie.genre} • ${movie.duration} minutes • ${movie.director}`;
+
+                movieHeader.appendChild(movieTitle);
+                movieHeader.appendChild(movieDeleteBtn);
+
+                const movieSynopsis = document.createElement("div");
+                movieSynopsis.classList.add("movie-synopsis");
+                movieSynopsis.innerText = movie.synopsis;
+
+                movieInfoContainer.appendChild(movieHeader);
+                movieInfoContainer.appendChild(movieSpecs);
+                movieInfoContainer.appendChild(movieSynopsis);
+
+                const moviePoster = document.createElement("img");
+                // setarea unui atribut
+                moviePoster.setAttribute("src", movie.poster);
+                moviePoster.classList.add("poster-container");
+
+                // atasarea unor elemente unui element ce va deveni parinte (sau container)
+                movieItem.appendChild(moviePoster);
+                movieItem.appendChild(movieInfoContainer);
+
+                moviesList.appendChild(movieItem);
+            })
         }
-    });
+    )
 }
 
-function onMovieClick(movie) {
-    // afișarea unui mesaj sub formă de alertă
-    alert("Directed by " + movie.director);
+// metoda de stergere a unui film
+function removeMovie(movie) {
+    fetch(`http://localhost:8080/movies/${movie.id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    }).then(response => {
+        loadMovies();
+    })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }
 
+// metoda de cautare a unui film ce va utiliza valoarea introdusa in input-ul de cautare
+// si va apela metoda loadMovies definita anterior
+function searchMovie() {
+    const title = document.getElementById("search").value;
+    loadMovies(title);
+}
+
+// metoda de adaugare a unui film
 function addMovie() {
-    // extragerea datelor din campurile formularului
+    // extragerea datelor introduse in formular si crearea unui obiect ce va fi trimis catre back-end
     const formData = {
         title: document.getElementById('title').value,
         year: parseInt(document.getElementById('year').value),
@@ -54,7 +115,6 @@ function addMovie() {
         poster: document.getElementById('poster').value,
     };
 
-    // apelarea endpoint-ului de creare a unui nou film
     fetch('http://localhost:8080/movies', {
         method: 'POST',
         headers: {
@@ -62,9 +122,25 @@ function addMovie() {
         },
         body: JSON.stringify(formData),
     })
-    // dupa adaugarea cu succes a unui nou film, lista de filme de la nivelul front-end-ului este reincarcata
-    .then(response => loadMovies())
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+        .then(response => {
+            // stergerea datelor introduse in formular dupa introducerea cu succes a unui film
+            document.getElementById("addMovieForm").reset();
+            // reincarcarea filmelor afisate
+            loadMovies();
+            // inchiderea modalei de adaugare a unui film
+            closeModal();
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
+
+// metoda de afisare a modalei
+function openModal() {
+    document.getElementById("addMovieModal").show();
+}
+
+// metoda de ascundere a modalei
+function closeModal() {
+    document.getElementById("addMovieModal").close();
 }
