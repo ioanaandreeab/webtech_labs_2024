@@ -238,7 +238,7 @@ npm create vite@latest front-end-react --template react
 
 - Vom șterge ulterior directorul nostru existent _front-end-styled_, însă pentru moment îl vom păstra pentru a putea transfera și transforma codul existent
 
-- Vite  va crea o structură de directoare de bază (o vom modifica ulterior) și va adăuga configurări default pentru compilarea aplicației (prezente în fișierul _vite.config.js_ și _eslint.config.js_)
+- Vite  va crea o structură de directoare de bază (o vom modifica ulterior) și va adăuga configurări default pentru compilarea aplicației (prezente în fișierele _vite.config.js_ și _eslint.config.js_)
 
 - Apoi, conform cu instrucțiunile afișate în consolă, putem testa aplicația nou creată, după instalarea modulelor externe
 ```sh
