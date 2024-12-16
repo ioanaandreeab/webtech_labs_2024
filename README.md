@@ -5,17 +5,20 @@
 
 ## Ultimul seminar:
 
-- [Seminar 10 - Stilizarea front-end-ului folosind CSS](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab10)
+- [Seminar 11 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab11)
 
 ## Tema curentă:
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
 - ~~[Tema 2 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework2)~~
+- [Tema 3 - REST](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework3)
 
 ## Formular trimitere tema curentă:
 - ~~[Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)~~
     - ~~*deadline*: **29 octombrie 2024**~~
 - ~~[Tema 2 - JavaScript](https://forms.gle/5cEYPavMPmwU7LFeA)~~
     - ~~*deadline*: **26 noiembrie 2024**~~
+- [Tema 3 - REST](https://forms.gle/CDAK8rDB8Yituyyz5)
+    - *deadline*: **14 ianuarie 2025**
 
 ## Proiect:
 - ~~[Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)~~
