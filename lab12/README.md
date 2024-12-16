@@ -41,7 +41,7 @@
 
 ### 1.2 React Router
 
-- Nativ, utilitarul _create-react-app_ nu vine cu capacități pentru a putea ruta componentele React din aplicație, motiv pentru care este nevoie să folosim o librărie externă
+- Nativ, utilitarul _create-react-app_ (ori Vite, sau alte instrumente disponibile pentru initițializarea proiectelor de tip React) nu vine cu capacități pentru a putea ruta componentele React din aplicație, motiv pentru care este nevoie să folosim o librărie externă
 
 - **React Router** este o bibliotecă pentru React care furnizează facilități de rutare în aplicațiile web construite cu React
 
