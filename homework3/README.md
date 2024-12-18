@@ -32,4 +32,4 @@
 8. Acordă acces profesorului de la seminar pentru verificarea repository-ului
     - [Tutorial acordare acces](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
     - User profesor: [ioanaandreeab](https://github.com/ioanaandreeab)
-9. Copiază link-ul repository-ului și completează [acest formular](https://forms.gle/AXRHv9gJEVCBWynM9)
+9. Copiază link-ul repository-ului și completează [acest formular](https://forms.gle/CDAK8rDB8Yituyyz5)
