@@ -27,7 +27,7 @@
 ## Proiect:
 - ~~[Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)~~
     - ~~*deadline*: **19 noiembrie 2024**~~
-- Back-end aplicație
+- ~~Back-end aplicație~~
     - ~~*deadline*: **20 decembrie 2024**~~
 
 ## Toate seminarele:

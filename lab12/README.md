@@ -366,7 +366,7 @@ reportWebVitals();
       useEffect(() => {
           axios.get(`${SERVER_URL}/movies`)
           .then(res => res.data)
-          .then(data => dispatch(setMovies(data.records)));
+          .then(data => dispatch(setMovies(data.movies)));
       }, []);
 
       return (
