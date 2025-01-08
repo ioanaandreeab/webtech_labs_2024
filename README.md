@@ -21,7 +21,7 @@
 - [Tema 3 - REST](https://forms.gle/CDAK8rDB8Yituyyz5)
     - *deadline*: **14 ianuarie 2025**
 
-- [Tema 3 - React](https://forms.gle/Q4SY6kHDRniftP5b8)
+- [Tema 4 - React](https://forms.gle/Q4SY6kHDRniftP5b8)
     - *deadline*: **19 ianuarie 2025**
 
 ## Proiect:
