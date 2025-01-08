@@ -11,6 +11,7 @@
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
 - ~~[Tema 2 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework2)~~
 - [Tema 3 - REST](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework3)
+- [Tema 4 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework4)
 
 ## Formular trimitere tema curentă:
 - ~~[Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)~~
@@ -20,11 +21,14 @@
 - [Tema 3 - REST](https://forms.gle/CDAK8rDB8Yituyyz5)
     - *deadline*: **14 ianuarie 2025**
 
+- [Tema 3 - React](https://forms.gle/Q4SY6kHDRniftP5b8)
+    - *deadline*: **19 ianuarie 2025**
+
 ## Proiect:
 - ~~[Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)~~
     - ~~*deadline*: **19 noiembrie 2024**~~
 - Back-end aplicație
-    - *deadline*: **20 decembrie 2024**
+    - ~~*deadline*: **20 decembrie 2024**~~
 
 ## Toate seminarele:
 
