@@ -236,5 +236,3 @@ export { MoviesTable };
 - Pentru a te familiariza mai bine cu utilizarea bibliotecii Material UI încearcă să înlocuiești componentele din aplicația pe care am dezvoltat-o la seminarele trecute cu componente exportate de Material UI
 
 - Poți găsi lista de componente [aici](https://mui.com/material-ui/all-components/) :)
-
-- De asemenea, ca pregătire pentru examen, încearcă să rezolvi exemplul din directorul _exam-prep_
