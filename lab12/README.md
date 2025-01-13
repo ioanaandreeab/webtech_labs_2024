@@ -187,8 +187,6 @@ function ComponentC({ data, onDataUpdate }) {
 
 ## 3. Definirea unor rute pentru aplicația pentru gestiunea filmelor
 
-- În aplicația pe care o dezvoltăm am identificat mai multe arii de interes, motiv pentru care vom încerca în continuare să creăm o rută specifică pentru filme (părțile aplicației pe care le-am discutat până acum împreună) și una pentru a vizualiza colecțiile
-
 - Vom începe prin a instala pachetul necesar:
 ```sh
 npm install --save react-router-dom
