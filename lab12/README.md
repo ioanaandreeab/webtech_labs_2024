@@ -255,8 +255,8 @@ npm install --save react-router-dom
   function App() {
     return (
       <div className="App">
-        <div class="header">
-          <div class="app-title">action!</div>
+        <div className="header">
+          <div className="app-title">action!</div>
         </div>
         <Router>
           <Routes>
@@ -324,26 +324,22 @@ npm install --save @reduxjs/toolkit react-redux
 
 - Înainte să putem folosi store-ul și acțiunile în aplicația noastră trebuie ca aceasta să fie _înglobată într-un context Redux_
 
-- Vom adăuga următoarele modificări în fișierul _src/index.js_
+- Vom adăuga următoarele modificări în fișierul _src/main.jsx_
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
 import store from './stores/store';
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <Provider store={store}>
-      <App />
+    <App />
     </Provider>
-  </React.StrictMode>
-);
-
-reportWebVitals();
+  </StrictMode>,
+)
 ```
 
 - Așa cum am menționat, vom seta store-ul în momentul accesării aplicației, în componenta _Home_
@@ -373,6 +369,7 @@ reportWebVitals();
           <div className='home'>
               <h1>Explore movies</h1>
               <button className='custom-button' onClick={() => navigate('/movies')}>Start now</button>
+              <button className='custom-button' onClick={() => navigate('/not-found')}>Simulate not found</button>
           </div>
       )
   };
