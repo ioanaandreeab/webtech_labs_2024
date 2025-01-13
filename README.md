@@ -45,6 +45,8 @@
 - [Seminar 11 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab11)
 - [Seminar 12 - React Router & Redux](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab12)
 
+- [Seminar 13 - Utilizarea bibliotecilor de componente (Material UI)](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab13)
+
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
 - [Cursuri video](https://www.youtube.com/watch?v=RLz2q9SKObw&list=PLYdpEVB86eG7P8z3bUn_lC7UZ-Jr4hUIR)
