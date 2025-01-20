@@ -19,10 +19,10 @@
 - ~~[Tema 2 - JavaScript](https://forms.gle/5cEYPavMPmwU7LFeA)~~
     - ~~*deadline*: **26 noiembrie 2024**~~
 - [Tema 3 - REST](https://forms.gle/CDAK8rDB8Yituyyz5)
-    - *deadline*: **14 ianuarie 2025**
+    - ~~*deadline*: **14 ianuarie 2025**~~
 
 - [Tema 4 - React](https://forms.gle/Q4SY6kHDRniftP5b8)
-    - *deadline*: **19 ianuarie 2025**
+    - ~~*deadline*: **19 ianuarie 2025**~~
 
 ## Proiect:
 - ~~[Formular pentru repository proiecte](https://forms.gle/Vv4jNed2uZvVpXWz9)~~
