@@ -5,13 +5,13 @@
 
 ## Ultimul seminar:
 
-- [Seminar 11 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab11)
+- [Seminar 13 - Utilizarea bibliotecilor de componente (Material UI)](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/lab13)
 
 ## Tema curentă:
 - ~~[Tema 1 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework1)~~
 - ~~[Tema 2 - JavaScript](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework2)~~
-- [Tema 3 - REST](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework3)
-- [Tema 4 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework4)
+- ~~[Tema 3 - REST](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework3)~~
+- ~~[Tema 4 - React](https://github.com/ioanaandreeab/webtech_labs_2024/tree/main/homework4)~~
 
 ## Formular trimitere tema curentă:
 - ~~[Tema 1 - JavaScript](https://forms.gle/2opGM7L6VcpqukGe8)~~
@@ -50,6 +50,7 @@
 ## Alte materiale
 - [Lecții interactive](https://student.nextlab.tech/)
 - [Cursuri video](https://www.youtube.com/watch?v=RLz2q9SKObw&list=PLYdpEVB86eG7P8z3bUn_lC7UZ-Jr4hUIR)
+- [Variantă suplimentară tema 4](https://github.com/hypothetical-andrei/homework-4-2024)
 
 ## Software necesar
 - [Git](https://git-scm.com/downloads)
